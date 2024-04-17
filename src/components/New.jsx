@@ -12,7 +12,6 @@ import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 
-import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
 
 const New = () => {

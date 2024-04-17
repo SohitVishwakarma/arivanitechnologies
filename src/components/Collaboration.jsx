@@ -10,7 +10,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
+           24*7 Live For Seamless Services 
           </h2>
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
@@ -38,7 +38,7 @@ const Collaboration = () => {
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
                     src={brainwaveSymbol}
-                    alt="brainwave"
+                    alt="Arivani"
                     width={48}
                     height={48}
                   />
