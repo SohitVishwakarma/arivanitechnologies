@@ -1,11 +1,14 @@
+
+
 import React, { useState } from "react";
-import { brainwave } from "../assets";
 import { navigation } from "../constants/index";
-import { useLocation } from "react-router-dom";
+import { Form, Link, useLocation } from "react-router-dom";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import Contactus from "../components/Contactus"
+
 
 const Header = () => {
   const pathname = useLocation();
@@ -21,6 +24,8 @@ const Header = () => {
     }
   };
 
+ 
+
   const handleClick = () => {
     if (!openNav) return;
 
@@ -29,7 +34,8 @@ const Header = () => {
   };
 
   return (
-    <div
+  
+     <div
       className={`fixed top-0 left-0 w-full z-50 lg:backdrop-blur-sm border-b border-n-6 
   lg:bg-n-8/90 ${openNav ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"} `}
     >
@@ -66,12 +72,20 @@ const Header = () => {
           </div>
           <HamburgerMenu />
         </nav>
+
+
         <a
-          href="#signup"
-          className="hidden mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
+        href="/Contactus"
+          className=" mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
         >
-          Contact Us!
+         Contact Us
         </a>
+        
+         
+
+    
+
+         
         <Button className={`hidden lg:flex`} href={"#login"}>
           Arivani Technologies Pvt Ltd
         </Button>
@@ -81,6 +95,7 @@ const Header = () => {
         </Button>
       </div>
     </div>
+   
   );
 };
 

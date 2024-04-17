@@ -8,7 +8,7 @@ const Generating = ({ className }) => {
       } text-base`}
     >
       <img className="w-5 h-5 mr-4" src={loading} alt="loading" />
-      Develop Your Virtual Business
+      Develop Your Virtual Businesses with Our Expert
     </div>
   );
 };

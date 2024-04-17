@@ -33,7 +33,7 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  
 } from "../assets";
 
 export const navigation = [
@@ -60,7 +60,7 @@ export const navigation = [
   {
     id: "4",
     title: "Contact Us",
-    url: "#contactus",
+    url: "/Contactus",
     onlyMobile: true,
   },
   {
@@ -75,7 +75,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -209,12 +209,12 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    description: "24*7 Support, Expert Service",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
+      "A Expert that can understand Your Query about Your Business",
       "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Ability to explore the E-World and its features without any Risk with Us",
     ],
   },
   {
@@ -244,16 +244,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Choose a Service",
+    text: "Select from services, suiting best to your business requirements..",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Request a Meeting",
+    text: "You can request a meeting, at any time for discussing any requirement.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +261,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Receive Custom Plan",
+    text: "Receiving a custom plan leverages an organization to make it more successful.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Let’s Make it Happen",
+    text: "Our work will lead your business innovatively towards success.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +278,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Our Wide Area of Achievements",
+    text: "To succeed, every software solution must deeply be integrated into the existing tech environment.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Happy Customer",
+    text: "We have thousands of happy customers with a great experience of work",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

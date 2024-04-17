@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="container relative">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="mb-6 h1">
-            E2E Application Development&nbsp;and&nbsp;Grow Business with {""}
+            E2E Application Development&nbsp;and&nbsp;Grow Businesses with {""}
             <span className="relative inline-block">
               Arivani{" "}
               <img
@@ -35,7 +35,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="max-w-3xl mx-auto mb-6 body-1 text-n-2 lg:mb-8">
-          Leverage Your Business With Our Expert Team and Innovative Strategies.
+            Leverage Your Businesses With Our Expert Team and Innovative Strategies.
           </p>
           <Button href={`/learnmore`} white>
             Learn More
@@ -47,8 +47,8 @@ const Hero = () => {
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]"></div>
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src="./team.jpg"
-                  alt="AI"
+                  src="./group.JPG"
+                  alt="groupImg"
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
@@ -72,6 +72,7 @@ const Hero = () => {
                   />
                 </ScrollParallax>
               </div>
+             
             </div>
           </div>
           <Gradient />
@@ -88,7 +89,7 @@ const Hero = () => {
         </div>
         <CompanyLogos className="relative z-10 hidden mt-20 lg:block" />
       </div>
-      {/* <BottomLine /> */}
+      <BottomLine />
     </Section>
   );
 };
