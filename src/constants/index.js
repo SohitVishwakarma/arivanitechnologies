@@ -40,33 +40,33 @@ export const navigation = [
   {
     id: "0",
     title: "About Us",
-    url: "#aboutus",
+    url: "/aboutus",
   },
   {
     id: "1",
     title: "Services",
-    url: "#services",
+    url: "/services",
   },
   {
     id: "2",
     title: "Portfolio",
-    url: "#portfolio",
+    url: "/portfolio",
   },
-  {
+ /*  {
     id: "3",
     title: "Openings",
-    url: "#openings",
-  },
+    url: "/openings",
+  }, */
   {
     id: "4",
     title: "Contact Us",
-    url: "/Contactus",
+    url: "/contactus",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Social Links",
-    url: "#Sociallinks",
+    url: "/sociallinks",
     onlyMobile: true,
   },
 ];
@@ -299,30 +299,31 @@ export const socials = [
     id: "0",
     title: "Discord",
     iconUrl: discordBlack,
-    url: "#",
+    url:"/",
+    
   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "/",
   },
   {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "/",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "/",
   },
 ];

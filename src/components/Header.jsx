@@ -41,7 +41,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a href="#hero" className="block w-[12rem] xl:mr-8">
-          <img src='/ityo2.png'alt="Brainwave logo" width={190} height={40} />
+          <img src='/ityo2.png'alt=" logo" width={190} height={40} />
         </a>
         <nav
           className={`${
@@ -75,7 +75,7 @@ const Header = () => {
 
 
         <a
-        href="/Contactus"
+        href="/contactus"
           className=" mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
         >
         Contact Us
