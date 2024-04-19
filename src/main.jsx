@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
     <App />
-    <Footer /> 
+     
     <Routes>
     <Route path="/Contactus" element={<Contactus />} />
     <Route path="/aboutus" element="/"/>
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Routes>
     {/* <Services/> */}
           
-      
+    <Footer />
     
     </BrowserRouter>
   </React.StrictMode>

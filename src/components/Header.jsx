@@ -1,18 +1,28 @@
-
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { navigation } from "../constants/index";
 import { Form, Link, useLocation } from "react-router-dom";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import Contactus from "../components/Contactus"
-
+import Contactus from "../components/Contactus";
 
 const Header = () => {
   const pathname = useLocation();
   const [openNav, setOpenNav] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const toggle = () => {
     if (openNav) {
@@ -24,8 +34,6 @@ const Header = () => {
     }
   };
 
- 
-
   const handleClick = () => {
     if (!openNav) return;
 
@@ -34,8 +42,7 @@ const Header = () => {
   };
 
   return (
-  
-     <div
+    <div
       className={`fixed top-0 left-0 w-full z-50 lg:backdrop-blur-sm border-b border-n-6 
   lg:bg-n-8/90 ${openNav ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"} `}
     >
@@ -73,19 +80,16 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
+        {/* Conditionally render the "Contact Us" link */}
+        {!isMobile && (
+          <a
+            href="/contactus"
+            className="mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block "
+          >
+            Contact Us
+          </a>
+        )}
 
-        <a
-        href="/contactus"
-          className=" mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
-        >
-        Contact Us
-        </a>
-        
-         
-
-    
-
-         
         <Button className={`hidden lg:flex`} href={"#login"}>
           Arivani Technologies Pvt Ltd
         </Button>
@@ -95,7 +99,6 @@ const Header = () => {
         </Button>
       </div>
     </div>
-   
   );
 };
 

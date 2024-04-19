@@ -52,11 +52,11 @@ export const navigation = [
     title: "Portfolio",
     url: "/portfolio",
   },
- /*  {
+   {
     id: "3",
     title: "Openings",
     url: "/openings",
-  }, */
+  }, 
   {
     id: "4",
     title: "Contact Us",
@@ -327,3 +327,12 @@ export const socials = [
     url: "/",
   },
 ];
+
+
+
+
+/* 
+
+
+div id 7 
+*/
